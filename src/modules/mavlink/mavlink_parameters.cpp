@@ -283,10 +283,15 @@ MavlinkParametersManager::send()
 		param_find("BAT_CRIT_THR");
 		param_find("BAT_EMERGEN_THR");
 		param_find("BAT_LOW_THR");
-		param_find("BAT_N_CELLS");     // deprecated
-		param_find("BAT_V_CHARGED");   // deprecated
-		param_find("BAT_V_EMPTY");     // deprecated
-		param_find("BAT_V_LOAD_DROP"); // deprecated
+		// param_find("BAT_N_CELLS");     // deprecated
+		// param_find("BAT_V_CHARGED");   // deprecated
+		// param_find("BAT_V_EMPTY");     // deprecated
+		// param_find("BAT_V_LOAD_DROP"); // deprecated
+		param_find("BAT1_N_CELLS");     // deprecated
+		param_find("BAT1_V_CHARGED");   // deprecated
+		param_find("BAT1_V_EMPTY");     // deprecated
+		param_find("BAT1_V_LOAD_DROP"); // deprecated
+
 		param_find("CAL_ACC0_ID");
 		param_find("CAL_GYRO0_ID");
 		param_find("CAL_MAG0_ID");
