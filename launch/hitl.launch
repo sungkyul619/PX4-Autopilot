@@ -1,0 +1,17 @@
+<launch>
+    <!-- Gazebo 실행 -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(px4)/Tools/sitl_gazebo/worlds/hitl_iris.world"/>
+        <arg name="paused" value="false"/>
+        <arg name="use_sim_time" value="true"/>
+        <arg name="gui" value="true"/>
+    </include>
+
+    <!-- MAVROS 실행 -->
+    <node pkg="mavros" type="mavros_node" name="mavros" output="screen">
+        <param name="fcu_url" value="udp://:14540@192.168.20.100:14550"/>
+        <param name="gcs_url" value="udp://192.168.20.32:14550"/>
+        <param name="tgt_system" value="1"/>
+        <param name="tgt_component" value="1"/>
+    </node>
+</launch>
