@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+<arg name="world_path" default="$(find px4)/Tools/sitl_gazebo/worlds/warehouse.world" />
+<arg name="model" default="iris_stereo_camera"/>
+    <!-- Launch Gazebo -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(arg world_path)" />
+        <!-- <arg name="gui" value="true"/> -->
+    </include>
+
+  <!-- 모델을 Gazebo에 스폰 -->
+  <node name="spawn_test" pkg="gazebo_ros" 
+  type="spawn_model" args="-sdf -model $(arg model) -database $(arg model)" />
+
+</launch>
+
+
+<!-- rosrun gazebo_ros spawn_model -sdf -model psk2 -database iris_stereo_camera2 -->
+<!-- roslaunch gazebo_ros empty_world.launch  -->
