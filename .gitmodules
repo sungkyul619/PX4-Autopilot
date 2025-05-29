@@ -79,3 +79,6 @@
 [submodule "boards/modalai/voxl2/libfc-sensor-api"]
 	path = boards/modalai/voxl2/libfc-sensor-api
 	url = https://gitlab.com/voxl-public/voxl-sdk/core-libs/libfc-sensor-api.git
+[submodule "PX4-gazebo-models"]
+	path = PX4-gazebo-models
+	url = http://git.dairkorea.com/ros2/PX4-gazebo-models.git
