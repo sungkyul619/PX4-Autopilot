@@ -82,3 +82,6 @@
 [submodule "PX4-gazebo-models"]
 	path = PX4-gazebo-models
 	url = http://git.dairkorea.com/ros2/PX4-gazebo-models.git
+[submodule "Tools/simulation/gz"]
+	path = Tools/simulation/gz
+	url = http://git.dairkorea.com/ros2/PX4-gazebo-models.git
