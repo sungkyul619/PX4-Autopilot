@@ -16,7 +16,7 @@ param set-default SENS_EN_GPSSIM 1
 param set-default SENS_EN_BAROSIM 0
 param set-default SENS_EN_MAGSIM 1
 param set-default SENS_EN_ARSPDSIM 1
-
+    
 # Actuator mapping
 param set-default SIM_GZ_WH_FUNC1 101 # right wheel
 param set-default SIM_GZ_WH_MIN1 0
